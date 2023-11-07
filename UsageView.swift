@@ -5,13 +5,11 @@ ZStack {
         .clipped()
     
     Circle()
-        .foregroundStyle(colorScheme == .light ? .white : .clear)
+        .foregroundStyle(.white)
     
     Circle()
-        .foregroundStyle(color.asColor)
+        .foregroundStyle(color)
         .opacity(0.4)
-        .opacity(color.asColor.inactive(colorScheme))
-        .animation(.default, value: color)
     
     Button {
         isEmoji.toggle()
